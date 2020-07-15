@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 100%;
+        }
+
+        .lunbo {
+            width: 100%;
+            height: 400px;
+            margin: auto;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        .lunbo ul li {
+            width: 100%;
+            height: 255px;
+            position: absolute;
+            top: 0px;
+        }
+
+        .lunbo ul li a {
+            display: inline-block;
+            width: 100%;
+            height: 255px;
+        }
+
+        /*.lunbo ul li a img{
+            width:1029px;
+            height:255px;
+        }*/
+        .buttons {
+            float: left;
+            width: 100%;
+            height: 31px;
+            margin: auto;
+        }
+
+        .buttons div a {
+            display: inline-block;
+            width: 48px;
+            height: 4px;
+            background: #434343;
+            margin-right: 5px;
+            border-radius: 2px;
+        }
+
+        .buttons div a.on2 {
+            background: #cdcdcd;
+        }
+
+        .san {
+            margin: 0 auto;
+            animation-name: san;
+            animation-duration: 0.5s;
+        }
+        img{
+            margin: 0 auto;
+            width: 1780px;
+            height: 390px;
+        }
+        @keyframes san {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+    <script src="lunbo.js">
+
+
+    </script>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="lunbo">
+            <ul id="lunbo">
+                <li class="san"><a href="#"><img src="img/1.png" /></a></li>
+                <li class="san" style="display:none;"><a href="#"><img src="img/2.png" /></a></li>
+                <li class="san" style="display:none;"><a href="#"><img src="img/3.png" /></a></li>
+                <li class="san" style="display:none;"><a href="#"><img src="img/4.png" /></a></li>
+                <li class="san" style="display:none;"><a href="#"><img src="img/5.png" /></a></li>
+                <li class="san" style="display:none;"><a href="#"><img src="img/6.png" /></a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <div style="width:400px;margin:auto;" id="buttons">
+                <a href="#" class="on2"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
